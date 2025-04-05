@@ -675,3 +675,24 @@ img {
   border: none;
   fill: #f4f4fd;
 }
+
+.modal-link {
+  color: #4d5ae5;
+}
+
+.modal-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  background: #4d5ae5;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
