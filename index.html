@@ -549,5 +549,78 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-svg" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="section-subtitle modal-text">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <label for="name" class="modal-label">
+            Name
+            <div class="modal-input-wrap">
+              <input
+                class="modal-input"
+                type="text"
+                name="name"
+                required
+                id="name"
+              />
+              <scg class="modal-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-user"></use>
+              </scg>
+            </div>
+          </label>
+
+          <label for="email" class="modal-label">
+            Email
+            <div class="modal-input-wrap">
+              <input class="modal-input" type="text" name="email" id="email" />
+              <scg class="modal-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </scg>
+            </div>
+          </label>
+
+          <label for="phone" class="modal-label">
+            Phone
+            <div class="modal-input-wrap">
+              <input
+                class="modal-input"
+                type="text"
+                name="phone"
+                required
+                id="phone"
+              />
+              <scg class="modal-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </scg>
+            </div>
+          </label>
+
+          <label for="comment" class="modal-label">
+            Comment
+            <textarea
+              class="modal-textarea"
+              name="comment"
+              placeholder="Text input"
+              id="comment"
+            >
+            </textarea>
+          </label>
+
+          <label class="modal-label">
+            <input type="checkbox" name="answer" />
+            I accept the terms and conditions of the
+            <span class="modal-checkbox-wrap">Privacy Policy</span>
+          </label>
+          <button type="button" class="modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
