@@ -550,90 +550,85 @@
       </div>
     </footer>
     <div class="backdrop">
-      <div class="modal">
-        <button type="button" class="modal-close-btn">
-          <svg class="modal-close-svg" width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+      <div class="model">
+        <button type="button" class="model-close-btn">
+          <svg width="8" height="8" class="model-close-svg">
+            <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
-        <p class="section-subtitle modal-text">
-          Leave your contacts and we will call you back
-        </p>
-        <form class="modal-form">
-          <div class="modal-container">
-            <label for="user-name" class="modal-label"> Name </label>
-            <div class="modal-input">
+        <p class="model-text">Leave your contacts and we will call you back</p>
+        <form class="model-form">
+          <div class="modal-field">
+            <label for="user-name" class="model-ladel">Name</label>
+            <div class="model-input-container">
               <input
-                class="modal-input"
                 type="text"
-                name="user-name"
-                required
                 id="user-name"
+                name="user-name"
+                class="model-input"
               />
-              <scg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-user"></use>
-              </scg>
+              <svg width="18" height="24" class="model-input-svg">
+                <use href="./images/symbol-defs.svg#icon-user"></use>
+              </svg>
             </div>
           </div>
-
-          <div class="modal-container">
-            <label for="user-phone" class="modal-label">
-              Phone
-              <div class="modal-input-wrap">
-                <input
-                  class="modal-input"
-                  type="text"
-                  name="user-phone"
-                  required
-                  id="user-phone"
-                />
-                <scg class="modal-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </scg>
-              </div>
+          <div class="modal-field">
+            <label for="user-phone" class="model-ladel">Phone</label>
+            <div class="model-input-container">
+              <input
+                type="text"
+                id="user-phone"
+                name="user-phone"
+                class="model-input"
+              />
+              <svg width="18" height="24" class="model-input-svg">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="model-ladel">Email</label>
+            <div class="model-input-container">
+              <input
+                type="text"
+                id="user-email"
+                name="user-email"
+                class="model-input"
+              />
+              <svg width="18" height="24" class="model-input-svg">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="mobal-command">
+            <label for="user-comment" class="model-ladel">
+              Comment
+              <textarea
+                class="modal-textarea"
+                name="user-comment"
+                placeholder="Text input"
+                id="user-comment"
+              >
+              </textarea>
             </label>
           </div>
-
-          <div class="modal-container">
-            <label for="user-email" class="modal-label"> Email </label>
-            <div class="modal-input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-email"
-                id="user-email"
-              />
-              <scg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </scg>
-            </div>
-          </div>
-
-          <div class="modal-comment-container">
-            <label for="user-comment" class="modal-label"> Comment </label>
-            <textarea
-              class="modal-textarea"
-              name="user-comment"
-              placeholder="Text input"
-              id="user-comment"
-            >
-            </textarea>
-          </div>
-
-          <div class="modal-checkbox-container">
+          <div class="modal-checkbox">
             <input
               type="checkbox"
-              name="user-privacy"
               id="user-privacy"
               value="true"
-              class="input-checkbox visually-hidden"
+              name="user-privacy"
+              class="modal-check visually-hidden"
             />
-            <label for="user-privacy" class="checkbox-label">
+            <label for="user-privacy" class="modal-checkbox-label">
+              <span class="modal-wrap-checkbox">
+                <svg width="10" height="8" class="modal-Vector-svg">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <span class="modal-checkbox-wrap">Privacy Policy</span></label
-            >
+            </label>
           </div>
-          <button type="button" class="modal-btn">Send</button>
         </form>
       </div>
     </div>
