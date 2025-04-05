@@ -560,64 +560,79 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label for="name" class="modal-label">
-            Name
+          <div class="modal-container">
+            <label for="user-name" class="modal-label"> Name </label>
+            <div class="modal-input">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                required
+                id="user-name"
+              />
+              <scg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </scg>
+            </div>
+          </div>
+
+          <div class="modal-container">
+            <label for="user-phone" class="modal-label">
+              Phone
+              <div class="modal-input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-phone"
+                  required
+                  id="user-phone"
+                />
+                <scg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </scg>
+              </div>
+            </label>
+          </div>
+
+          <div class="modal-container">
+            <label for="user-email" class="modal-label"> Email </label>
             <div class="modal-input-wrap">
               <input
                 class="modal-input"
                 type="text"
-                name="name"
-                required
-                id="name"
+                name="user-email"
+                id="user-email"
               />
-              <scg class="modal-icon" width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-user"></use>
+              <scg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
               </scg>
             </div>
-          </label>
+          </div>
 
-          <label for="email" class="modal-label">
-            Email
-            <div class="modal-input-wrap">
-              <input class="modal-input" type="text" name="email" id="email" />
-              <scg class="modal-icon" width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-email"></use>
-              </scg>
-            </div>
-          </label>
-
-          <label for="phone" class="modal-label">
-            Phone
-            <div class="modal-input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="phone"
-                required
-                id="phone"
-              />
-              <scg class="modal-icon" width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </scg>
-            </div>
-          </label>
-
-          <label for="comment" class="modal-label">
-            Comment
+          <div class="modal-comment-container">
+            <label for="user-comment" class="modal-label"> Comment </label>
             <textarea
               class="modal-textarea"
-              name="comment"
+              name="user-comment"
               placeholder="Text input"
-              id="comment"
+              id="user-comment"
             >
             </textarea>
-          </label>
+          </div>
 
-          <label class="modal-label">
-            <input type="checkbox" name="answer" />
-            I accept the terms and conditions of the
-            <span class="modal-checkbox-wrap">Privacy Policy</span>
-          </label>
+          <div class="modal-checkbox-container">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="input-checkbox visually-hidden"
+            />
+            <label for="user-privacy" class="checkbox-label">
+              I accept the terms and conditions of the
+              <span class="modal-checkbox-wrap">Privacy Policy</span></label
+            >
+          </div>
           <button type="button" class="modal-btn">Send</button>
         </form>
       </div>
